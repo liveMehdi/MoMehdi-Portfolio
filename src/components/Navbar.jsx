@@ -61,7 +61,7 @@ const Navbar = () => {
               className={`${
                 active === "About" ? "text-white" : "text-secondary"
               } font-poppins font-medium cursor-pointer text-[16px]
-                   hover:text-white  transition`}
+                   hover:text-white transition`}
               onClick={() => {
                 setActive("About");
                 setToggle(!toggle);

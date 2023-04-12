@@ -26,10 +26,18 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import twitter from "./twitter.png";
+import twitter2 from "./twitter2.png";
+import twitter3 from "./twitter3.png";
+import google from "./google.png";
+import google2 from "./google2.png";
+import google3 from "./google3.png";
 import library from "./library.png";
+import library2 from "./library2.png";
+import library3 from "./library3.png";
+import films from "./films.png";
+import films2 from "./films2.png";
+import films3 from "./films3.png";
 
 export {
   nextjs,
@@ -54,10 +62,19 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  twitter,
+  twitter3,
+  google,
   firebase,
   linkp,
   library,
+  library3,
+  films,
+  library2,
+  twitter2,
+  films2,
+  films3,
+
+  google2,
+  google3,
 };

@@ -15,7 +15,15 @@ const ProjectCard = ({
   image,
   direct_link,
   github_link,
+  image2,
+  image3,
+  id,
 }) => {
+  function scrollView(id, num) {
+    const target = document.getElementById(`${id}slide${num}`);
+    target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  const [downPress, setDownPress] = useState(false);
   return (
     <motion.div
       className=""
@@ -28,47 +36,122 @@ const ProjectCard = ({
           speed: 450,
           transition: true,
         }}
-        className="bg-tertiary transition-colors border-4 border-transparent
+        className={`bg-tertiary transition-colors border-4 border-transparent
          hover:border-emerald-300 p-2 lg:p-5 rounded-2xl  group relative
-         shadow-card"
+         shadow-card ${downPress && "border-emerald-300"}`}
       >
-        <div className="relative h-[200px] w-[313px] sm:h-[300px] sm:w-[470px] lg:w-[810px] lg:h-[517.5px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
-          <div className="absolute inset-0 flex justify-start items-end m-5 lg:m-9 mr-16 card-img_hover space-x-3 lg:space-x-4">
+        <div className="relative h-[200px] w-[313px] sm:h-[300px] sm:w-[470px] lg:w-[782.6px] lg:h-[500px]">
+          <div className="carousel w-full z-50 overflow-hidden object-cover h-full">
+            <div id={`${id}slide1`} className="carousel-item relative w-full">
+              <img src={image} className="w-full h-full" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a
+                  onClick={() => scrollView(id, 3)}
+                  className="btn btn-circle z-50  border-2 bg-primary hover:bg-primary border-white text-white text-[17px] 
+                  hover:scale-105 hover: active:scale-95 shadow-xl hover:border-white"
+                >
+                  ❮
+                </a>
+                <a
+                  onClick={() => scrollView(id, 2)}
+                  className="btn btn-circle  border-2 bg-primary hover:bg-primary border-white text-white text-[17px] 
+                  hover:scale-105 hover: active:scale-95 shadow-xl hover:border-white"
+                >
+                  ❯
+                </a>
+              </div>
+            </div>
             <div
-              onClick={() => window.open(direct_link, "_blank")}
-              className="bg-primary bg-opacity-70 backdrop-filter backdrop-blur-[12px]
-              border border-gray-200 hover:scale-105 shadow-black hover:shadow-2xl 
-              duration-[125] transition w-[3.2rem] h-[3.2rem] lg:w-[4.5rem] lg:h-[4.5rem] 
-              rounded-full flex justify-center items-center cursor-pointer"
+              id={`${id}slide2`}
+              className="carousel-item relative w-full overflow-hidden"
+            >
+              <img src={image2} className="w-full h-full " />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a
+                  onClick={() => scrollView(id, 1)}
+                  className="btn btn-circle  border-2 bg-primary hover:bg-primary border-black text-white text-[17px] 
+                  hover:scale-105 hover: active:scale-95 shadow-xl hover:border-white"
+                >
+                  ❮
+                </a>
+                <a
+                  onClick={() => scrollView(id, 3)}
+                  className="btn btn-circle  border-2 bg-primary hover:bg-primary border-white text-white text-[17px] 
+                  hover:scale-105 hover: active:scale-95 shadow-xl hover:border-white"
+                >
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div id={`${id}slide3`} className="carousel-item relative w-full">
+              <img src={image3} className="w-full" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a
+                  onClick={() => scrollView(id, 2)}
+                  className="btn btn-circle  border-2 bg-primary hover:bg-primary border-white text-white text-[17px] 
+                  hover:scale-105 hover: active:scale-95 shadow-xl hover:border-white"
+                >
+                  ❮
+                </a>
+                <a
+                  onClick={() => scrollView(id, 1)}
+                  className="btn btn-circle  border-2 bg-primary hover:bg-primary border-white text-white text-[17px] 
+                  hover:scale-105 hover: active:scale-95 shadow-xl hover:border-white"
+                >
+                  ❯
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="absolute flex bottom-0 left-1/2 mb-5 translate-x-[-50%] card-img_hover  lg:space-x-4 bg-primary bg-opacity-70 backdrop-filter backdrop-blur-[12px]
+              border rounded-full border-gray-300 shadow-2xl"
+          >
+            <div
+              onClick={() => window.open(github_link, "_blank")}
+              className="
+                shadow-black hover:opacity-70 
+              duration-[125] transition w-[3.2rem] h-[3.2rem] lg:w-[4.5rem] lg:h-[4.5rem] ml-[5px]
+              border-r border-gray-400 flex justify-center items-center cursor-pointer"
             >
               <img
-                src={linkp}
+                src={github}
                 alt="link"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
             <div
-              onClick={() => window.open(github_link, "_blank")}
-              className="bg-primary bg-opacity-70 backdrop-filter backdrop-blur-[12px]
-              border border-gray-300 lg:w-[4.5rem] hover:scale-105 duration-[125] 
-              w-[3.2rem] h-[3.2rem] lg:h-[4.5rem] rounded-full flex justify-center 
-              items-center cursor-pointer"
+              onClick={() => window.open(direct_link, "_blank")}
+              className=" hover:opacity-70
+               lg:w-[4.5rem]  duration-[125]
+              w-[3.2rem] h-[3.2rem] lg:h-[4.5rem]  flex justify-center 
+              items-center cursor-pointer "
             >
               <img
-                src={github}
+                src={linkp}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
+            <div
+              onClick={() => setDownPress(!downPress)}
+              className={` hidden lg:flex   hover:bg-[#ffffff1d]  pl-8 py-3 pr-[22px] rounded-r-full
+              border-l border-gray-400  justify-center items-center cursor-pointer text-2xl 
+              text-center text-white transition duration-75 z-[100] `}
+            >
+              Details &nbsp;
+              <div
+                className={` transition text-3xl ${
+                  downPress ? "rotate-90 " : "-rotate-90"
+                }`}
+              >
+                {"<"}
+              </div>
+            </div>
           </div>
         </div>
 
-        <div
+        {/* <div
           className="hidden lg:block group-hover:w-[45%] transition-all
         duration-300 ease-in-out group-hover:px-4 absolute w-0 
         top-2 right-2 bottom-2 lg:top-5 lg:right-5 lg:bottom-5  bg-emerald-950 bg-opacity-[85%] rounded-2xl rounded-l-none
@@ -82,11 +165,28 @@ const ProjectCard = ({
           <h3 className="py-5 text-[28px] text-white font-bold">{name}</h3>
           <p className="pr-3 ">{description}</p>
           <div className="mt-4 flex flex-wrap gap-2"></div>
-        </div>
+        </div> */}
 
-        <div className=" lg:hidden">
-          <h3 className="py-5 text-[28px] text-white font-bold">{name}</h3>
-          <p className="pr-3 ">{description}</p>
+        <div
+          className={`relative lg:border-b lg:border-b-emerald-300  lg:absolute top-[-1px] rounded-t-2xl left-[-1px] right-[-1px] 
+          px-2 lg:px-8 lg:border-transparent 
+         lg:bg-primary lg:bg-opacity-90 lg:backdrop-filter lg:backdrop-blur-[12px] lg:pb-2  ${
+           !downPress && "lg:hidden"
+         }`}
+        >
+          <div className=" lg:flex lg:justify-between items-center pb-[22px]">
+            {" "}
+            <h3 className="pt-5 text-[30px] text-white font-bold mb-3 lg:mb-0">{name}</h3>
+            <div className="flex space-x-[10px] pb-[6px] right-2 top-2 ">
+              {tags.map((tag) => (
+                <div className={`lg:mt-6 py-1 px-3 border-secondary border rounded-xl text-gray-200`}>{tag}</div>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:pr-12 lg:text-[17px] text-gray-200">
+            <div>{description}</div>
+          </div>
           <div className="mt-4 flex flex-wrap gap-2"></div>
         </div>
       </Tilt>
@@ -105,15 +205,14 @@ const Works = () => {
       const { scrollLeft } = rowRef.current;
 
       const scrollTo =
-        direction == "left" ? scrollLeft - 820 : scrollLeft + 820;
+        direction == "left" ? scrollLeft - 800 : scrollLeft + 800;
 
       rowRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
 
       if (scrollTo <= 0) {
-        setIsMoved(false)
-      }
-      else {
-        setIsMoved(true)
+        setIsMoved(false);
+      } else {
+        setIsMoved(true);
       }
     }
   };
@@ -131,7 +230,7 @@ const Works = () => {
       </span>
       <motion.div
         variants={textVariant()}
-        className=" sm:px-16 px-6 sm:py-16 sm:pb-12 py-10 max-w-7xl mx-auto"
+        className=" sm:px-16 px-6 sm:py-16 sm:pb-8 py-10 max-w-7xl mx-auto"
       >
         <p className={`${styles.sectionSubText}`} id="projects">
           See my work

@@ -18,7 +18,7 @@
   };
   .arrow {
     @apply invisible lg:visible bg-primary rounded-full p-2 leading-none absolute top-1/2 border
-    translate-y-[-60%] z-40 m-auto bg-opacity-60 backdrop-filter backdrop-blur-[12px]
+    translate-y-[-60%] z-40 m-auto bg-opacity-60 backdrop-filter backdrop-blur-[12px] text-gray-200
     cursor-pointer hover:scale-105 active:scale-100
    border-gray-200 text-[50px];
   }
