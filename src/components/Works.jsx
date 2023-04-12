@@ -36,15 +36,17 @@ const ProjectCard = ({
           speed: 450,
           transition: true,
         }}
-        className={`bg-tertiary transition-colors border-4 border-transparent
+        className={`bg-tertiary transition-colors border-4
          hover:border-emerald-300 p-2 lg:p-5 rounded-2xl  group relative
-         shadow-card ${downPress && "border-emerald-300"}`}
+         shadow-card ${
+           downPress ? "border-emerald-300" : "border-transparent"
+         }`}
       >
         <div className="relative h-[200px] w-[313px] sm:h-[300px] sm:w-[470px] lg:w-[782.6px] lg:h-[500px]">
           <div className="carousel w-full z-50 overflow-hidden object-cover h-full">
             <div id={`${id}slide1`} className="carousel-item relative w-full">
               <img src={image} className="w-full h-full" />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 lg:left-[18px] lg:right-[18px] top-1/2">
                 <a
                   onClick={() => scrollView(id, 3)}
                   className="btn btn-circle z-50  border-2 bg-primary hover:bg-primary border-white text-white text-[17px] 
@@ -104,14 +106,14 @@ const ProjectCard = ({
             </div>
           </div>
           <div
-            className="absolute flex bottom-0 left-1/2 mb-5 translate-x-[-50%] card-img_hover  lg:space-x-4 bg-primary bg-opacity-70 backdrop-filter backdrop-blur-[12px]
-              border rounded-full border-gray-300 shadow-2xl"
+            className="absolute flex bottom-0 left-1/2 mb-[6px] sm:mb-3 lg:mb-4 translate-x-[-50%] card-img_hover lg:space-x-4 bg-primary bg-opacity-90 backdrop-filter backdrop-blur-[12px]
+              border rounded-full border-gray-200 shadow-2xl"
           >
             <div
               onClick={() => window.open(github_link, "_blank")}
               className="
                 shadow-black hover:opacity-70 
-              duration-[125] transition w-[3.2rem] h-[3.2rem] lg:w-[4.5rem] lg:h-[4.5rem] ml-[5px]
+              duration-[125] transition w-[3.2rem] h-[3.2rem] lg:w-[4.5rem] lg:h-[4.5rem] ml-[8px] 
               border-r border-gray-400 flex justify-center items-center cursor-pointer"
             >
               <img
@@ -135,7 +137,7 @@ const ProjectCard = ({
             </div>
             <div
               onClick={() => setDownPress(!downPress)}
-              className={` hidden lg:flex   hover:bg-[#ffffff1d]  pl-8 py-3 pr-[22px] rounded-r-full
+              className={` hidden lg:flex   hover:bg-[#ffffff1d]  px-8 py-3 rounded-r-full
               border-l border-gray-400  justify-center items-center cursor-pointer text-2xl 
               text-center text-white transition duration-75 z-[100] `}
             >
@@ -176,15 +178,21 @@ const ProjectCard = ({
         >
           <div className=" lg:flex lg:justify-between items-center pb-[22px]">
             {" "}
-            <h3 className="pt-5 text-[30px] text-white font-bold mb-3 lg:mb-0">{name}</h3>
-            <div className="flex space-x-[10px] pb-[6px] right-2 top-2 ">
+            <h3 className="pt-5 text-[30px] text-white font-bold mb-3 lg:mb-0">
+              {name}
+            </h3>
+            <div className="flex gap-x-[10px] pb-[6px] right-2 top-2 flex-wrap gap-y-3">
               {tags.map((tag) => (
-                <div className={`lg:mt-6 py-1 px-3 border-secondary border rounded-xl text-gray-200`}>{tag}</div>
+                <div
+                  className={`lg:mt-6 py-1 px-3 border-secondary border rounded-xl text-gray-200`}
+                >
+                  {tag}
+                </div>
               ))}
             </div>
           </div>
 
-          <div className="lg:pr-12 lg:text-[17px] text-gray-200">
+          <div className="lg:pr-16 lg:text-[17px] text-gray-200">
             <div>{description}</div>
           </div>
           <div className="mt-4 flex flex-wrap gap-2"></div>

@@ -35,7 +35,7 @@ const Hero = () => {
                 I'm Mehdi.
               </span>
             </h1>
-            <p
+            <div
               className={`${styles.heroSubText} mt-2 text-white-100 font-normal`}
               data-aos="fade-up"
               data-aos-delay="1000"
@@ -53,10 +53,9 @@ const Hero = () => {
                   <a href="#about"> about me.</a>
                 </span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
-        {/* <ComputersCanvas /> */}
 
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
           <a href="#about">
@@ -64,7 +63,7 @@ const Hero = () => {
               className="group hover:scale-105 w-[27px] h-[50px] rounded-3xl border-[2px] border-secondary 
           flex justify-center items-start p-2"
             >
-              <motion.dev
+              <motion.div
                 animate={{
                   y: [0, 24, 0],
                 }}

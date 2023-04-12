@@ -92,10 +92,10 @@ const projects = [
     id: "1",
 
     description:
-      "A Twitter clone, which uses Firebase to allow image, video and text posts; commenting on tweets; liking tweets and messaging other users. Users can login via google. It has an accurate, responsive design, powered by Tailwind.",
+      "A Twitter clone, which uses Firebase to allow image, gif and text posts; commenting on tweets; liking tweets and messaging other users. Users can login via google. It has an accurate, responsive design, powered by Tailwind.",
     tags: [
       "NextJS",
-      "Next Auth",
+      "NextAuth",
       "Tailwind",
       "Firebase",
       "Recoil",
@@ -110,7 +110,7 @@ const projects = [
     name: "Google Mitosis",
     id: "2",
     description:
-      "A Google clone, which uses the Google API to fetch results and display them via server-side rendering. Features include searching text, searching images, and pagination. It has an accurat, responsive design, powered by Tailwind",
+      "A Google clone, which fetched results from the Google API and displays them via server-side rendering. Features include searching text, searching images, and pagination. It has an accurate, responsive design, powered by Tailwind.",
     tags: [
       "NextJS",
       "Google API",
@@ -127,7 +127,7 @@ const projects = [
     id: "3",
 
     description:
-      "A movie database application which uses TMDB API and Axios to fetch movies and display their details. Features include searching and browsing movies, cast, favorating and pagination - all in a responsive, modern-looking, user-friendly environment.",
+      "A movie database application which uses TMDB API and Axios to fetch movies and display their details. Features include searching and browsing movies, cast, favorating and pagination - all in a modern, responsive and user-friendly environment.",
     tags: [
       "React",
       "TMDB API",
@@ -144,13 +144,13 @@ const projects = [
     id: "4",
 
     description:
-      "An online library application, which uses a mock API to render different books. Features include filtering, adding books to cart, and a modern, responsive UI.",
+      "An online library application, which uses a mock API to render different books. Features include filtering, adding books to cart, animations on scroll, and a modern, responsive UI.",
     tags: ["React", "CSS", "Animations"],
     image: library,
     image2: library2,
     image3: library3,
 
-    direct_link: "ple-library.vercel.app",
+    direct_link: "https://purple-library.vercel.app/",
     github_link: "https://github.com/liveMehdi/PurpleLibrary",
   },
 ];

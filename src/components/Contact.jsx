@@ -84,11 +84,11 @@ const Contact = ({ top }) => {
       <motion.div
         id="contactSection"
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="contactMod w-[90%] md:w-[725px] lg:w-[775px] p-8 rounded-2xl bg-black-100 
+        className="contactMod w-[90%] max-h-[87%]  md:w-[725px] lg:w-[775px] p-8 rounded-2xl bg-black-100 
         bg-opacity-[5%] backdrop-filter backdrop-blur-[7px] 
-        border border-[#ffffff13] mt-8"
+        border border-[#ffffff13] mt-8 overflow-y-auto scrollbar-thin scrollbar-track-rounded-full  scrollbar-thumb-violet-950"
       >
-        <p className={styles.sectionSubText}>Let's have a chat</p>
+        <p className={`${styles.sectionSubText}`}>Let's have a chat</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -136,7 +136,7 @@ const Contact = ({ top }) => {
               transition duration-200 hover:bg-[#221a4a]"
             />
           </label>
-          <div className="flex space-x-4 xs:justify-between items-center">
+          <div className="flex space-x-4 xs:justify-between items-center ">
             <button
               type="submit"
               className="w-fit bg-tertiary py-3 px-8 outline-none font-bold 
