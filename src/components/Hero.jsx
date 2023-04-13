@@ -61,7 +61,7 @@ const Hero = () => {
           <a href="#about">
             <div
               className="group hover:scale-105 w-[27px] h-[50px] rounded-3xl border-[2px] border-secondary 
-          flex justify-center items-start p-2"
+          flex justify-center items-start p-2 active:scale-95"
             >
               <motion.div
                 animate={{

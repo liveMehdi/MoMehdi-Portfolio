@@ -18,13 +18,13 @@ const About = () => {
         &nbsp;
       </span>
       <div>
-        <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant()} className="text-center">
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>About me.</h2>
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-8 text-[#ffffffc9] text-[17px] max-w-3xl leading-[30px] "
+          className="mt-8 text-[#ffffffc9] text-[17px] text-center max-w-3xl leading-[30px] mx-auto"
         >
           I'm an enthusiastic
           <span className="text-emerald-300"> frontend developer</span> from

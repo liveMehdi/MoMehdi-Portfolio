@@ -234,12 +234,12 @@ const Works = () => {
       viewport={{ once: true, amount: 0.25 }}
       className="relative"
     >
-      <span className="block mt-[-18px] pb-6 lg:pb-2" id="projects">
+      <span className="block mt-[-18px] pb-6 lg:pb-3" id="projects">
         &nbsp;
       </span>
       <motion.div
         variants={textVariant()}
-        className=" sm:px-16 px-6 sm:py-16 sm:pb-8 py-10 max-w-7xl mx-auto"
+        className=" sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto text-center"
       >
         <p className={`${styles.sectionSubText}`} id="projects">
           See my work
