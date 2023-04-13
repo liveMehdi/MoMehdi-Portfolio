@@ -40,7 +40,7 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="flex items-center gap-2 opacity-80"
+            className="flex items-center gap-2"
             onClick={() => {
               setActive("");
               window.scrollTo(0, 0);
