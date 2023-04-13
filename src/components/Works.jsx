@@ -106,14 +106,15 @@ const ProjectCard = ({
             </div>
           </div>
           <div
-            className="absolute flex bottom-0 left-1/2 mb-[6px] sm:mb-3 lg:mb-4 translate-x-[-50%] card-img_hover lg:space-x-4 bg-primary bg-opacity-90 backdrop-filter backdrop-blur-[12px]
-              border rounded-full border-gray-200 shadow-2xl"
+            className="absolute flex bottom-0 left-1/2 mb-[6px] sm:mb-3 lg:mb-4 translate-x-[-50%] 
+            card-img_hover lg:space-x-4 bg-primary bg-opacity-90 backdrop-filter backdrop-blur-[12px]
+              border rounded-full border-gray-200 shadow-2xl detailShadow"
           >
             <div
               onClick={() => window.open(github_link, "_blank")}
               className="
                 shadow-black hover:opacity-70 
-              duration-[125] transition w-[3.2rem] h-[3.2rem] lg:w-[4.5rem] lg:h-[4.5rem] ml-[8px] 
+              duration-[125] transition w-[3.2rem] h-[3.2rem] lg:w-[4.1rem] lg:h-[4rem] lg:ml-[6px] 
               border-r border-gray-400 flex justify-center items-center cursor-pointer"
             >
               <img
@@ -125,8 +126,8 @@ const ProjectCard = ({
             <div
               onClick={() => window.open(direct_link, "_blank")}
               className=" hover:opacity-70
-               lg:w-[4.5rem]  duration-[125]
-              w-[3.2rem] h-[3.2rem] lg:h-[4.5rem]  flex justify-center 
+              lg:w-[4.1rem] lg:h-[4rem] duration-[125]
+              w-[3.2rem] h-[3.2rem]   flex justify-center 
               items-center cursor-pointer "
             >
               <img
@@ -137,13 +138,13 @@ const ProjectCard = ({
             </div>
             <div
               onClick={() => setDownPress(!downPress)}
-              className={` hidden lg:flex   hover:bg-[#ffffff1d]  px-8 py-3 rounded-r-full
-              border-l border-gray-400  justify-center items-center cursor-pointer text-2xl 
+              className={` hidden lg:flex   hover:bg-[#ffffff1d] px-[26px] py-2 rounded-r-full
+              border-l border-gray-400  justify-center items-center cursor-pointer text-2xl text-[21px] 
               text-center text-white transition duration-75 z-[100] `}
             >
               Details &nbsp;
               <div
-                className={` transition text-3xl ${
+                className={` transition text-[29px] ${
                   downPress ? "rotate-90 " : "-rotate-90"
                 }`}
               >
