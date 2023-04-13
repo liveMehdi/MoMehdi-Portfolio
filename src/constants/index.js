@@ -110,7 +110,7 @@ const projects = [
     name: "Google Mitosis",
     id: "2",
     description:
-      "A Google clone, which fetched results from the Google API and displays them via server-side rendering. Features include searching text, searching images, and pagination. It has an accurate, responsive design, powered by Tailwind.",
+      "A Google clone, which fetches results from the Google API and displays them via server-side rendering. Features include searching text, searching images, and pagination. It has an accurate, responsive design, powered by Tailwind.",
     tags: [
       "NextJS",
       "Google API",
@@ -127,7 +127,7 @@ const projects = [
     id: "3",
 
     description:
-      "A movie database application which uses TMDB API and Axios to fetch movies and display their details. Features include searching and browsing movies, cast, favorating and pagination - all in a modern, responsive and user-friendly environment.",
+      "A movie database application which uses TMDB API and Axios to fetch movies and display their details. Features include searching and browsing movies, cast, favoriting and pagination - all in a modern, responsive and user-friendly environment.",
     tags: [
       "React",
       "TMDB API",
