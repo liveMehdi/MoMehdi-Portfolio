@@ -22,6 +22,9 @@ import {
   google3,
   films2,
   films3,
+  netflix,
+  netflix2,
+  netflix3,
 } from "../assets";
 
 export const navLinks = [
@@ -93,13 +96,7 @@ const projects = [
 
     description:
       "A Twitter clone, which uses Firebase to allow image, gif and text posts; commenting on tweets; liking tweets and messaging other users. Users can login via google. It has an accurate, responsive design, powered by Tailwind.",
-    tags: [
-      "NextJS",
-      "NextAuth",
-      "Tailwind",
-      "Firebase",
-      "Recoil",
-    ],
+    tags: ["NextJS", "NextAuth", "Tailwind", "Firebase", "Recoil"],
     image: twitter,
     image2: twitter2,
     image3: twitter3,
@@ -111,11 +108,7 @@ const projects = [
     id: "2",
     description:
       "A Google clone, which fetches results from the Google API and displays them via server-side rendering. Features include searching text, searching images, and pagination. It has an accurate, responsive design, powered by Tailwind.",
-    tags: [
-      "NextJS",
-      "Google API",
-      "Tailwind",
-    ],
+    tags: ["NextJS", "Google API", "Tailwind"],
     image: google,
     image2: google2,
     image3: google3,
@@ -128,11 +121,7 @@ const projects = [
 
     description:
       "A movie database application which uses TMDB API and Axios to fetch movies and display their details. Features include searching and browsing movies, cast, favoriting and pagination - all in a modern, responsive and user-friendly environment.",
-    tags: [
-      "React",
-      "TMDB API",
-      "Tailwind",
-    ],
+    tags: ["React", "TMDB API", "Tailwind"],
     image: films,
     image2: films2,
     image3: films3,
@@ -151,6 +140,20 @@ const projects = [
     image3: library3,
 
     direct_link: "https://purple-library.vercel.app/",
+    github_link: "https://github.com/",
+  },
+  {
+    name: "Netflix Mitosis",
+    id: "5",
+
+    description:
+      "A Netflix clone, which fetches movies from TMDB API, and displays them via server-side rendering. This app features email authentication via firebase, multiple react libraries to allow modal trailers, and performant typescript.",
+    tags: ["Typescript", "NextJS", "Tailwind", "Firebase" ,"TMDB API", "Recoil"],
+    image: netflix,
+    image2: netflix2,
+    image3: netflix3,
+
+    direct_link: "https://netflix-mitosis.vercel.app/",
     github_link: "https://github.com/",
   },
 ];

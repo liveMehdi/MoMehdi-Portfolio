@@ -182,7 +182,7 @@ const ProjectCard = ({
             <h3 className="pt-5 text-[30px] text-white font-bold mb-3 lg:mb-0">
               {name}
             </h3>
-            <div className="flex gap-x-[10px] pb-[6px] right-2 top-2 flex-wrap gap-y-3">
+            <div className="flex gap-x-[10px] pb-[6px] right-2 top-2 flex-wrap gap-y-3 lg:gap-y-0">
               {tags.map((tag) => (
                 <div
                   className={`lg:mt-6 py-1 px-3 border-secondary border rounded-xl text-gray-200`}

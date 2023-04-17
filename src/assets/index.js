@@ -2,8 +2,7 @@ import logo from "./logo.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import linkp from "./linkp.png"
-
+import linkp from "./linkp.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -29,6 +28,9 @@ import library3 from "./library3.png";
 import films from "./films.png";
 import films2 from "./films2.png";
 import films3 from "./films3.png";
+import netflix from "./netflix.png";
+import netflix2 from "./netflix2.png";
+import netflix3 from "./netflix3.png";
 
 export {
   nextjs,
@@ -57,7 +59,9 @@ export {
   twitter2,
   films2,
   films3,
-
+  netflix,
+  netflix2,
+  netflix3,
   google2,
   google3,
 };
