@@ -13,7 +13,7 @@
 @layer components {
   .hoverUnderline {
     @apply relative flex items-center after:w-0 after:right-0
-  after:bg-white after:h-[2px] after:absolute after:bottom-[-2px] 
+  after:bg-emerald-200 bg-opacity-80 after:h-[2px] after:absolute after:bottom-[-2px] 
     hover:after:w-full hover:after:left-0 after:transition-all;
   };
   .arrow {

@@ -55,7 +55,7 @@ const Navbar = () => {
               data-aos-duration="1000"
             />
           </Link>
-          <ul className="list-none hidden sm:flex flex-row gap-10">
+          <ul className="list-none hidden sm:flex flex-row gap-9">
             <li
               key="about"
               className={`${
@@ -106,6 +106,16 @@ const Navbar = () => {
               data-aos-duration="1000"
             >
               Contact
+            </li>
+            <li
+              className={`text-secondary
+                   font-poppins font-medium cursor-pointer text-[16px]
+                   hover:text-white transition`}
+              onClick={() => {
+                window.open("https://www.mehdi.life");
+              }}
+            >
+              Resume
             </li>
           </ul>
 
@@ -164,6 +174,16 @@ const Navbar = () => {
                   }}
                 >
                   Contact
+                </li>
+                <li
+                  className={`text-secondary
+                   font-poppins font-medium cursor-pointer text-[16px]
+                   hover:text-white transition`}
+                  onClick={() => {
+                    window.open("https://www.mehdi.life");
+                  }}
+                >
+                  Resume
                 </li>
               </ul>
             </div>

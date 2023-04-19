@@ -16,7 +16,7 @@ const Hero = () => {
           className={`${styles.paddingX} absolute inset-0 top-[200px] mx-auto flex max-w-7xl flex-row items-start justify-start`}
         >
           <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>
+            <h1 className={`${styles.heroHeadText} text-white` }>
               <span
                 className="text-[50px] leading-[2px]"
                 data-aos="fade-up"
@@ -36,20 +36,21 @@ const Hero = () => {
               </span>
             </h1>
             <div
-              className={`${styles.heroSubText} mt-2 text-white-100 font-normal`}
+              className={`${styles.heroSubText} mt-2 text-white-100 font-light`}
               data-aos="fade-up"
               data-aos-delay="1000"
               data-aos-duration="1000"
             >
-              A Frontend Developer.
+              A frontend developer.
               <div
-                className="text-[22px]"
+                className="text-[21px]"
                 data-aos="fade-up"
                 data-aos-delay="1200"
                 data-aos-duration="1000"
               >
-                Here's a bit more
-                <span className="text-emerald-400 font-medium ">
+                Here's a bit more {" "}
+                <span className="text-emerald-400 font-normal leading-none inline-flex 
+                hover:opacity-60 transition duration-200 ease-in-out">
                   <a href="#about"> about me.</a>
                 </span>
               </div>

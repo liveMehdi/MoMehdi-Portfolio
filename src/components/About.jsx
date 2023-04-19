@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { staggerContainer } from "../utils/motion";
 import Tech from "./Tech";
+import { BsFillFilePdfFill, BsLinkedin } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -32,12 +33,21 @@ const About = () => {
           <span className="text-emerald-300">beautiful, functional</span> and
           <span className="text-emerald-300"> responsive</span> websites, with
           exceptional user experiences. I am currently
-          <span className="text-emerald-300"> open to new opportunities.</span>
-          <span className="mt-4 block text-emerald-300 font-medium">
-            My tech below...
+          <span className="text-emerald-300">
+            {" "}
+            open to new opportunities.
+          </span>{" "}
+          LinkedIn, resume and tech below...
+          <span className="mt-6 py-4 flex justify-center items-center text-3xl gap-x-4 text-emerald-200 opacity-80">
+            <a href="https://www.linkedin.com/in/momehdi" target="_blank">
+              <BsLinkedin className="cursor-pointer hover:opacity-60 transition" />
+            </a>
+            <a href="" target="_blank">
+              <BsFillFilePdfFill className="cursor-pointer hover:opacity-60 transition" />
+            </a>
           </span>
         </motion.p>
-        <div className="hidden xs:block pt-14 sm:pt-20 md:pt-28 ">
+        <div className="hidden xs:block pt-14 sm:pt-20 md:pt-24 ">
           <Tech />
         </div>
         <div className="xs:hidden pt-14 sm:pt-20 md:pt-28 ">
@@ -57,4 +67,4 @@ const About = () => {
   );
 };
 
-export default About
+export default About;

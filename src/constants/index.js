@@ -40,6 +40,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "contact",
+    title: "Resume",
+  },
 ];
 
 const technologies = [
