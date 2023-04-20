@@ -105,7 +105,7 @@ const projects = [
     image2: twitter2,
     image3: twitter3,
     direct_link: "https://twitter-mitosis.vercel.app/",
-    github_link: "https://github.com/",
+    github_link: "https://github.com/liveMehdi/twitter-mitosis",
   },
   {
     name: "Google Mitosis",
@@ -117,7 +117,7 @@ const projects = [
     image2: google2,
     image3: google3,
     direct_link: "https://google-mitosis.vercel.app/",
-    github_link: "https://github.com/",
+    github_link: "https://github.com/liveMehdi/google-mitosis",
   },
   {
     name: "Emerald Films",
@@ -130,7 +130,7 @@ const projects = [
     image2: films2,
     image3: films3,
     direct_link: "https://emerald-films.vercel.app/",
-    github_link: "https://github.com/",
+    github_link: "https://github.com/liveMehdi/emerald-films",
   },
   {
     name: "Purple Library",
@@ -144,7 +144,7 @@ const projects = [
     image3: library3,
 
     direct_link: "https://purple-library.vercel.app/",
-    github_link: "https://github.com/",
+    github_link: "https://github.com/liveMehdi/purplelibrary",
   },
   {
     name: "Netflix Mitosis",
@@ -158,7 +158,7 @@ const projects = [
     image3: netflix3,
 
     direct_link: "https://netflix-mitosis.vercel.app/",
-    github_link: "https://github.com/",
+    github_link: "https://github.com/liveMehdi/netflix-mitosis",
   },
 ];
 
