@@ -112,7 +112,7 @@ const Navbar = () => {
                    font-poppins font-medium cursor-pointer text-[16px]
                    hover:text-white transition`}
               onClick={() => {
-                window.open("%PUBLIC_URL%/mehdi-resume.pdf");
+                window.open("/mehdi-resume.pdf");
               }}
             >
               Resume

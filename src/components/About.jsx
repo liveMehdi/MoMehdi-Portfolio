@@ -42,7 +42,7 @@ const About = () => {
             <a href="https://www.linkedin.com/in/momehdi" target="_blank">
               <BsLinkedin className="cursor-pointer hover:opacity-60 transition" />
             </a>
-            <a href="%PUBLIC_URL%/mehdi-resume.pdf" target="_blank">
+            <a href="/mehdi-resume.pdf" target="_blank">
               <BsFillFilePdfFill className="cursor-pointer hover:opacity-60 transition" />
             </a>
           </span>
