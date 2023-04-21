@@ -12,6 +12,7 @@ https://www.mehdi.life/
 * React
 * TailwindCSS
 * ThreeJS
+* React Tilt
 * AOS
 * Recoil
 * Vercel CI/CD
