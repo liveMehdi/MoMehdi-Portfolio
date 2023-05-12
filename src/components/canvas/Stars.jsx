@@ -30,18 +30,19 @@ const Stars = ({top}) => {
   );
 };
 
-const StarsCanvas = ({top}) => {
-  return (
+const StarsCanvas =  ({top}) =>  {
+    return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={<CanvasLoader />}>
-          <Stars top={top}/>
+          <Stars top={top} />
         </Suspense>
 
         <Preload all />
       </Canvas>
     </div>
   );
+  
 };
 
 export default StarsCanvas;

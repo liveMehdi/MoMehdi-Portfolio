@@ -6,7 +6,8 @@ import { contactModal } from "../atoms/modalAtom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Hero = () => {
+const Hero = ({timeUp}) => {
+ 
   AOS.init();
   const [cModal, setCModal] = useRecoilState(contactModal);
   if (!cModal) {
@@ -14,8 +15,7 @@ const Hero = () => {
       <section className="relative w-full h-screen mx-auto">
         <div
           className={`${styles.paddingX} absolute inset-0 top-[200px] mx-auto flex max-w-7xl flex-row items-start justify-start`}
-        >
-          <div>
+        > {timeUp && <div>
             <h1 className={`${styles.heroHeadText} text-white` }>
               <span
                 className="text-[50px] leading-[2px]"
@@ -55,7 +55,8 @@ const Hero = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </div>}
+          
         </div>
 
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

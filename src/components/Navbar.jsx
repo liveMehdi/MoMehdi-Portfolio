@@ -114,6 +114,9 @@ const Navbar = () => {
               onClick={() => {
                 window.open("/mehdi-resume.pdf");
               }}
+              data-aos="fade-left"
+              data-aos-delay="2200"
+              data-aos-duration="1000"
             >
               Resume
             </li>
