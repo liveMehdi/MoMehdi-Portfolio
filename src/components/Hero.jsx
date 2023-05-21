@@ -14,11 +14,11 @@ const Hero = ({timeUp}) => {
     return (
       <section className="relative w-full h-screen mx-auto">
         <div
-          className={`${styles.paddingX} absolute inset-0 top-[200px] mx-auto flex max-w-7xl flex-row items-start justify-start`}
+          className={`${styles.paddingX} absolute inset-0 top-[250px] mx-auto flex max-w-7xl flex-row items-start justify-start`}
         > {timeUp && <div>
-            <h1 className={`${styles.heroHeadText} text-white` }>
+            <h1 className={`${styles.heroHeadText} text-white font-light` }>
               <span
-                className="text-[50px] leading-[2px]"
+                className="text-[50px] leading-[2px] font-extralight"
                 data-aos="fade-up"
                 data-aos-delay="600"
                 data-aos-duration="1000"
@@ -36,14 +36,14 @@ const Hero = ({timeUp}) => {
               </span>
             </h1>
             <div
-              className={`${styles.heroSubText} mt-2 text-white-100 font-light`}
+              className={`${styles.heroSubText} mt-2 text-white-100 font-extralight`}
               data-aos="fade-up"
               data-aos-delay="1000"
               data-aos-duration="1000"
             >
               A frontend developer.
               <div
-                className="text-[21px]"
+                className="text-[21px] "
                 data-aos="fade-up"
                 data-aos-delay="1200"
                 data-aos-duration="1000"

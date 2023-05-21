@@ -55,12 +55,12 @@ const Navbar = () => {
               data-aos-duration="1000"
             />
           </Link>
-          <ul className="list-none hidden sm:flex flex-row gap-9">
+          <ul className="list-none hidden sm:flex flex-row gap-9 font-normal">
             <li
               key="about"
               className={`${
                 active === "About" ? "text-white" : "text-secondary"
-              } font-poppins font-medium cursor-pointer text-[16px]
+              } font-poppins  cursor-pointer text-[16px]
                    hover:text-white transition`}
               onClick={() => {
                 setActive("About");
@@ -76,7 +76,7 @@ const Navbar = () => {
               key="projects"
               className={`${
                 active === "Projects" ? "text-white" : "text-secondary"
-              } font-poppins font-medium cursor-pointer text-[16px]
+              } font-poppins  cursor-pointer text-[16px]
                    hover:text-white transition`}
               onClick={() => {
                 setActive("Projects");
@@ -92,7 +92,7 @@ const Navbar = () => {
               key="contact"
               className={`${
                 active === "Contact" ? "text-white" : "text-secondary"
-              } font-poppins font-medium cursor-pointer text-[16px]
+              } font-poppins  cursor-pointer text-[16px]
                    hover:text-white transition`}
               onClick={() => {
                 setActive("Contact");
@@ -109,7 +109,7 @@ const Navbar = () => {
             </li>
             <li
               className={`text-secondary
-                   font-poppins font-medium cursor-pointer text-[16px]
+                   font-poppins  cursor-pointer text-[16px]
                    hover:text-white transition`}
               onClick={() => {
                 window.open("/mehdi-resume.pdf");

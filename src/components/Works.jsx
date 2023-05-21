@@ -177,9 +177,9 @@ const ProjectCard = ({
            !downPress && "lg:hidden"
          }`}
         >
-          <div className=" lg:flex lg:justify-between items-center pb-[22px]">
+          <div className=" lg:flex lg:justify-between items-center pb-[22px] font-light">
             {" "}
-            <h3 className="pt-5 text-[30px] text-white font-bold mb-3 lg:mb-0">
+            <h3 className="pt-5 text-[30px] text-white  mb-3 lg:mb-0 font-normal">
               {name}
             </h3>
             <div className="flex gap-x-[10px] pb-[6px] right-2 top-2 flex-wrap gap-y-3 lg:gap-y-0">
@@ -193,7 +193,7 @@ const ProjectCard = ({
             </div>
           </div>
 
-          <div className="lg:pr-16 lg:text-[17px] text-gray-200">
+          <div className="lg:pr-16 lg:text-[17px] text-gray-200 font-light">
             <div>{description}</div>
           </div>
           <div className="mt-4 flex flex-wrap gap-2"></div>

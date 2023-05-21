@@ -4,14 +4,14 @@ const styles = {
     padding: "sm:px-16 px-6 sm:py-24 py-10",
   
     heroHeadText:
-      "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2",
+      "font-black text-white lg:text-[83px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2",
     heroSubText:
       "text-[#dfd9ff] font-extralight lg:text-[32px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[35px]",
   
     sectionHeadText:
-      "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+      "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] font-extralight",
     sectionSubText:
-      "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+      "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider font-extralight",
   };
   
   export { styles };

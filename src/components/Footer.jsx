@@ -18,7 +18,7 @@ function Footer() {
       >
         <img src={logo} alt="logo" className="h-10 pt-[6px]  object-contain hover:translate-y-[-4px] transition" />
       </Link>
-      <div className="flex space-x-4  xs:space-x-8 mt-12 flex-wrap gap-y-3 justify-center">
+      <div className="flex space-x-4  xs:space-x-8 mt-12 flex-wrap gap-y-3 justify-center font-light">
         <a href="https://www.linkedin.com/in/momehdi/" target="_blank" className="hoverUnderline">
           LinkedIn
         </a>

@@ -98,7 +98,7 @@ const Contact = ({ top }) => {
           className="mt-8 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-normal mb-4">Your Name</span>
             <input
               type="text"
               name="name"
@@ -106,12 +106,12 @@ const Contact = ({ top }) => {
               onChange={handleChange}
               placeholder="What's your name?"
               className="bg-tertiary placeholder:text-secondary py-4 px-6 
-              text-white rounded-lg outline-none font-medium focus:bg-[#221a4a] 
+              text-white rounded-lg outline-none font-normal focus:bg-[#221a4a] 
               transition duration-200 hover:bg-[#221a4a]"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-normal mb-4">Your Email</span>
             <input
               type="email"
               name="email"
@@ -119,12 +119,12 @@ const Contact = ({ top }) => {
               onChange={handleChange}
               placeholder="What's your email?"
               className="bg-tertiary placeholder:text-secondary py-4 px-6 
-              text-white rounded-lg outline-none border-none font-medium focus:bg-[#221a4a] 
+              text-white rounded-lg outline-none border-none font-normal focus:bg-[#221a4a] 
               transition duration-200 hover:bg-[#221a4a]"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-normal mb-4">Your Message</span>
             <textarea
               rows={7}
               name="message"
@@ -132,14 +132,14 @@ const Contact = ({ top }) => {
               onChange={handleChange}
               placeholder="What do you want to say?"
               className="bg-tertiary placeholder:text-secondary py-4 px-6 
-              text-white rounded-lg outline-none border-none font-medium focus:bg-[#221a4a] 
+              text-white rounded-lg outline-none border-none font-normal focus:bg-[#221a4a] 
               transition duration-200 hover:bg-[#221a4a]"
             />
           </label>
           <div className="flex space-x-4 xs:justify-between items-center ">
             <button
               type="submit"
-              className="w-fit bg-tertiary py-3 px-8 outline-none font-bold 
+              className="w-fit bg-tertiary py-3 px-8 outline-none font-medium 
             shadow-md shadow-primary text-white rounded-xl"
             >
               {loading ? "Sending..." : "Send"}

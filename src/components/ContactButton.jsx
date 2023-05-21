@@ -28,7 +28,7 @@ function ContactButton() {
       </button> */}
 
       <button
-        className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-lg group
+        className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-normal text-white rounded-md shadow-lg group
         hover:shadow-emerald-700 transition duration-[250]
         "
         onClick={() => {

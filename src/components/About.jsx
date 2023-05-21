@@ -25,7 +25,7 @@ const About = () => {
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-8 text-[#ffffffc9] text-[17px] text-center max-w-3xl leading-[30px] mx-auto"
+          className="mt-8 text-[#ffffffc9] text-[18px] text-center max-w-3xl leading-[30px] mx-auto font-light"
         >
           I'm an enthusiastic
           <span className="text-emerald-300"> frontend developer</span> from
