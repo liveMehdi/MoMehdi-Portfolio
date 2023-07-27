@@ -27,16 +27,32 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-8 text-[#ffffffc9] text-[18px] text-center max-w-3xl leading-[30px] mx-auto font-light"
         >
-          I'm an enthusiastic
-          <span className="text-emerald-300"> frontend developer</span> from
-          London, devoted to building{" "}
-          <span className="text-emerald-300">beautiful, functional</span> and
-          <span className="text-emerald-300"> responsive</span> websites, with
-          exceptional user experiences. I am currently
+          A <span className="text-emerald-300">frontend developer</span> with
+          strong experience in{" "}
+          <span className="text-emerald-300">marketing</span> and
           <span className="text-emerald-300">
             {" "}
-            open to new opportunities.
+            delivering websites for businesses
+          </span>
+          . I bring an{" "}
+          <span className="text-emerald-300">innovative but reliable</span>{" "}
+          approach to software development, combining both{" "}
+          <span className="text-emerald-300">individual expertise</span> and{" "}
+          <span className="text-emerald-300">collaborative efforts</span>, to
+          achieve{" "}
+          <span className="text-emerald-300"> strategic objectives</span>. I am
+          passionate about building{" "}
+          <span className="text-emerald-300">
+            {" "}
+            beautiful, functional and responsive
           </span>{" "}
+          websites, with{" "}
+          <span className="text-emerald-300">
+            exceptional user experiences.
+          </span>
+          <br />I am currently
+          <span className="text-emerald-300"> open to new opportunities.</span>
+          <br />
           LinkedIn, resume and tech below...
           <span className="mt-6 py-4 flex justify-center items-center text-3xl gap-x-4 text-emerald-200 opacity-80">
             <a href="https://www.linkedin.com/in/momehdi" target="_blank">

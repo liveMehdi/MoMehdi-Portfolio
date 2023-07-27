@@ -48,7 +48,7 @@ const Hero = ({timeUp}) => {
                 data-aos-delay="1200"
                 data-aos-duration="1000"
               >
-                Here's a bit more {" "}
+                Here's more {" "}
                 <span className="text-emerald-400 font-normal leading-none inline-flex 
                 hover:opacity-60 transition duration-200 ease-in-out">
                   <a href="#about"> about me.</a>

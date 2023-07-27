@@ -16,12 +16,12 @@ const Stars = ({top}) => {
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
+    <group rotation={[2, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled >
         <PointMaterial
           transparent
-          color='#f272c8'
-          size={0.0025}
+          color='#FFFFFF'
+          size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -33,7 +33,7 @@ const Stars = ({top}) => {
 const StarsCanvas =  ({top}) =>  {
     return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas camera={{ position: [0, 0, 0] }}>
         <Suspense fallback={<CanvasLoader />}>
           <Stars top={top} />
         </Suspense>
